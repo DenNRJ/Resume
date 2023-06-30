@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="terekhin, cv, resume">
     <meta name="description" content="Это сайт - резюме Терехина Дениса">
+    <link rel="stylesheet" href="styles.css">
     <title>Terekhin Resume</title>
 </head>
 <body>
 
-    <img src="DSC09934.jpg" alt="Терехин Денис" width="300">
+<div class="container">
 
+
+
+
+<div class="info">
+    <img src="DSC09934.jpg" alt="Терехин Денис" class="avatar">
+
+<div class="info-text">
 <h1>Терехин Денис</h1>
 
 
@@ -23,24 +31,25 @@
 <a href="https://vk.com/id37444642" target="_blank">VK</a>
 |
 <a href="https://t.me/DenNRJman" target="_blank">Telegram</a>
+</div>
+</div>
+
+<div class="card bg-gold">
 
 <p><strong>Мои хобби</strong></p>
 
-<ol>
+<ol class="list">
     <li>Путешествие</li>
     <li>Ремонт автомобилей</li>
 </ol>
+</div>
 
+
+<div class="card bg-red">
 <h2>Опыт работы</h2>
 
-<table>
-    <thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-    </thead>
+<table class="table">
+   
     <tbody>
         <tr>
             <td>Рич Фэмили</td>
@@ -77,33 +86,39 @@
             <td>Селлер на WB</td>
             <td>2022-сейчас</td>
         </tr>
+    </div>
     </tbody>
 </table>
 
-<h2>Связаться со мной</h2>
 
-<form action="/">
 
-<div>
+<form action="/" class="form">
+    <h2>Связаться со мной</h2>
+
+<div class="form-row">
+
+<div class="form-group">
     <label for="name">Ваше имя:</label>
     <input type="text" id="name"placeholder="Введите имя">
+
 </div>
 
-<div>
+<div class="form-group">
     <label for="email">Ваш Email:</label>
     <input type="email" id="email" placeholder="Введите email"> 
 </div>
+</div>
 
-<div>
+<div class="form-group">
 
     <label for="message">Ваше сообщение:</label>
-    <br>
+
     <textarea id="message"cols="15" rows="10" placeholder="Введите сообщение..."></textarea></textarea>
     
 </div>
 
-<input type="submit" value="Отправить!">
+<input class="btn" type="submit" value="Отправить!">
 
-
+</div>
 </body>
 </html>
